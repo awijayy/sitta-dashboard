@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Histori Transaksi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="topbar">
+    <h2>📜 Histori Transaksi</h2>
+    <a href="dashboard.html">Kembali ke Dashboard</a>
+  </div>
+
+  <div class="content">
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Tanggal</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="historiTable"></tbody>
+    </table>
+
+  </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+  cekLogin();
+  tampilkanHistori();
+</script>
+
+</body>
+</html>
